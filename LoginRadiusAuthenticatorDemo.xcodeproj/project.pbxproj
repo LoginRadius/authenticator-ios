@@ -1,0 +1,862 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E87A895261AD17A005D180D /* HOTPGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E87A883261AD17A005D180D /* HOTPGenerator.m */; };
+		1E87A896261AD17A005D180D /* OTPGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E87A885261AD17A005D180D /* OTPGenerator.m */; };
+		1E87A897261AD17A005D180D /* TOTPGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E87A886261AD17A005D180D /* TOTPGenerator.m */; };
+		1E87A898261AD17A005D180D /* LRURL.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E87A889261AD17A005D180D /* LRURL.m */; };
+		1E87A899261AD17A005D180D /* LRNSString+URLArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E87A890261AD17A005D180D /* LRNSString+URLArguments.m */; };
+		1E87A89A261AD17A005D180D /* LRStringOperations.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E87A892261AD17A005D180D /* LRStringOperations.m */; };
+		1E87A89B261AD17A005D180D /* LRStringEncoding.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E87A893261AD17A005D180D /* LRStringEncoding.m */; };
+		1E87A89C261AD17A005D180D /* LRURLSession.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E87A894261AD17A005D180D /* LRURLSession.m */; };
+		1E8C6AC02553A6490071987C /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8C6ABF2553A6490071987C /* AVFoundation.framework */; };
+		1E8C6AC22553A6540071987C /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8C6AC12553A6540071987C /* AudioToolbox.framework */; };
+		1E8C6AC42553A65E0071987C /* CoreVideo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8C6AC32553A65E0071987C /* CoreVideo.framework */; };
+		1E8C6AC62553A6650071987C /* CoreMedia.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8C6AC52553A6650071987C /* CoreMedia.framework */; };
+		1E8C6ACA2553A6800071987C /* AddressBook.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8C6AC92553A6800071987C /* AddressBook.framework */; };
+		1E8C6ACC2553A6860071987C /* AddressBookUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8C6ACB2553A6860071987C /* AddressBookUI.framework */; };
+		1E8C6CF42553BF600071987C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8C6CF32553BF600071987C /* Foundation.framework */; };
+		1EB99130261862B800B44ECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1EB990E6261862B800B44ECA /* Assets.xcassets */; };
+		1EB99139261862B800B44ECA /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB990FE261862B800B44ECA /* SWRevealViewController.m */; };
+		1EB9913D261862B800B44ECA /* ReachabilityCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB99105261862B800B44ECA /* ReachabilityCheck.m */; };
+		1EB99143261862B800B44ECA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB9910F261862B800B44ECA /* LaunchScreen.storyboard */; };
+		1EB99144261862B800B44ECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1EB99111261862B800B44ECA /* Main.storyboard */; };
+		1EB99145261862B800B44ECA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB99113261862B800B44ECA /* main.m */; };
+		1EB99146261862B800B44ECA /* OTPTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB99116261862B800B44ECA /* OTPTableViewCell.m */; };
+		1EB99147261862B800B44ECA /* LRAuthListVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB99117261862B800B44ECA /* LRAuthListVC.m */; };
+		1EB99148261862B800B44ECA /* SidenavVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB9911A261862B800B44ECA /* SidenavVC.m */; };
+		1EB99149261862B800B44ECA /* TutorialVCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB9911C261862B800B44ECA /* TutorialVCViewController.m */; };
+		1EB9914A261862B800B44ECA /* LRWelcomeVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB9911D261862B800B44ECA /* LRWelcomeVC.m */; };
+		1EB9914C261862B800B44ECA /* LRURLEntryController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB99122261862B800B44ECA /* LRURLEntryController.m */; };
+		1EB9914E261862B800B44ECA /* WebViewContainerVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB99127261862B800B44ECA /* WebViewContainerVC.m */; };
+		1EB9914F261862B800B44ECA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB99129261862B800B44ECA /* AppDelegate.m */; };
+		1EB99150261862B800B44ECA /* AppEntryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB9912A261862B800B44ECA /* AppEntryVC.m */; };
+		1EB99151261862B800B44ECA /* LRAuthDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB9912C261862B800B44ECA /* LRAuthDetailVC.m */; };
+		1EB99152261862B800B44ECA /* HOTPKeyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB9912D261862B800B44ECA /* HOTPKeyVC.m */; };
+		1EB99153261862B800B44ECA /* CommonOps.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB9912E261862B800B44ECA /* CommonOps.m */; };
+		1EC48330257B3C270043B7B9 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC4832F257B3C270043B7B9 /* MessageUI.framework */; };
+		8510646F4AF8DF2F973F0EE3 /* Pods_LoginRadiusAuthenticatorDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95D5DAB9B9F4EBB7F9AEDB6 /* Pods_LoginRadiusAuthenticatorDemo.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1EFF0371254C262700C22B30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EFF034D254C262400C22B30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EFF0354254C262400C22B30;
+			remoteInfo = LoginRadiusAuthenticator;
+		};
+		1EFF037C254C262700C22B30 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1EFF034D254C262400C22B30 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1EFF0354254C262400C22B30;
+			remoteInfo = LoginRadiusAuthenticator;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1E10C87C2582738800609AB5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1E87A883261AD17A005D180D /* HOTPGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HOTPGenerator.m; sourceTree = "<group>"; };
+		1E87A884261AD17A005D180D /* LRURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRURL.h; sourceTree = "<group>"; };
+		1E87A885261AD17A005D180D /* OTPGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTPGenerator.m; sourceTree = "<group>"; };
+		1E87A886261AD17A005D180D /* TOTPGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TOTPGenerator.m; sourceTree = "<group>"; };
+		1E87A887261AD17A005D180D /* HOTPGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HOTPGenerator.h; sourceTree = "<group>"; };
+		1E87A888261AD17A005D180D /* OTPGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTPGenerator.h; sourceTree = "<group>"; };
+		1E87A889261AD17A005D180D /* LRURL.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRURL.m; sourceTree = "<group>"; };
+		1E87A88A261AD17A005D180D /* TOTPGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TOTPGenerator.h; sourceTree = "<group>"; };
+		1E87A88C261AD17A005D180D /* LRURLSession.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRURLSession.h; sourceTree = "<group>"; };
+		1E87A88D261AD17A005D180D /* LRDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRDefines.h; sourceTree = "<group>"; };
+		1E87A88E261AD17A005D180D /* LRStringEncoding.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRStringEncoding.h; sourceTree = "<group>"; };
+		1E87A88F261AD17A005D180D /* LRStringOperations.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRStringOperations.h; sourceTree = "<group>"; };
+		1E87A890261AD17A005D180D /* LRNSString+URLArguments.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "LRNSString+URLArguments.m"; sourceTree = "<group>"; };
+		1E87A891261AD17A005D180D /* LRNSString+URLArguments.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LRNSString+URLArguments.h"; sourceTree = "<group>"; };
+		1E87A892261AD17A005D180D /* LRStringOperations.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRStringOperations.m; sourceTree = "<group>"; };
+		1E87A893261AD17A005D180D /* LRStringEncoding.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRStringEncoding.m; sourceTree = "<group>"; };
+		1E87A894261AD17A005D180D /* LRURLSession.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRURLSession.m; sourceTree = "<group>"; };
+		1E8C6ABF2553A6490071987C /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		1E8C6AC12553A6540071987C /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
+		1E8C6AC32553A65E0071987C /* CoreVideo.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreVideo.framework; path = System/Library/Frameworks/CoreVideo.framework; sourceTree = SDKROOT; };
+		1E8C6AC52553A6650071987C /* CoreMedia.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMedia.framework; path = System/Library/Frameworks/CoreMedia.framework; sourceTree = SDKROOT; };
+		1E8C6AC72553A6710071987C /* libiconv.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libiconv.tbd; path = usr/lib/libiconv.tbd; sourceTree = SDKROOT; };
+		1E8C6AC92553A6800071987C /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
+		1E8C6ACB2553A6860071987C /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
+		1E8C6CF32553BF600071987C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1EB990E6261862B800B44ECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1EB990FD261862B800B44ECA /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		1EB990FE261862B800B44ECA /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		1EB990FF261862B800B44ECA /* ReachabilityCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachabilityCheck.h; sourceTree = "<group>"; };
+		1EB99105261862B800B44ECA /* ReachabilityCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachabilityCheck.m; sourceTree = "<group>"; };
+		1EB9910E261862B800B44ECA /* CommonOps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonOps.h; sourceTree = "<group>"; };
+		1EB99110261862B800B44ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1EB99112261862B800B44ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1EB99113261862B800B44ECA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1EB99116261862B800B44ECA /* OTPTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTPTableViewCell.m; sourceTree = "<group>"; };
+		1EB99117261862B800B44ECA /* LRAuthListVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRAuthListVC.m; sourceTree = "<group>"; };
+		1EB99118261862B800B44ECA /* LRURLEntryController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRURLEntryController.h; sourceTree = "<group>"; };
+		1EB99119261862B800B44ECA /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1EB9911A261862B800B44ECA /* SidenavVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SidenavVC.m; sourceTree = "<group>"; };
+		1EB9911B261862B800B44ECA /* WebViewContainerVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebViewContainerVC.h; sourceTree = "<group>"; };
+		1EB9911C261862B800B44ECA /* TutorialVCViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TutorialVCViewController.m; sourceTree = "<group>"; };
+		1EB9911D261862B800B44ECA /* LRWelcomeVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRWelcomeVC.m; sourceTree = "<group>"; };
+		1EB9911E261862B800B44ECA /* AppEntryVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppEntryVC.h; sourceTree = "<group>"; };
+		1EB99120261862B800B44ECA /* HOTPKeyVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HOTPKeyVC.h; sourceTree = "<group>"; };
+		1EB99121261862B800B44ECA /* LRAuthDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRAuthDetailVC.h; sourceTree = "<group>"; };
+		1EB99122261862B800B44ECA /* LRURLEntryController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRURLEntryController.m; sourceTree = "<group>"; };
+		1EB99123261862B800B44ECA /* OTPTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OTPTableViewCell.h; sourceTree = "<group>"; };
+		1EB99124261862B800B44ECA /* LRAuthListVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRAuthListVC.h; sourceTree = "<group>"; };
+		1EB99126261862B800B44ECA /* TutorialVCViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TutorialVCViewController.h; sourceTree = "<group>"; };
+		1EB99127261862B800B44ECA /* WebViewContainerVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WebViewContainerVC.m; sourceTree = "<group>"; };
+		1EB99128261862B800B44ECA /* SidenavVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SidenavVC.h; sourceTree = "<group>"; };
+		1EB99129261862B800B44ECA /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1EB9912A261862B800B44ECA /* AppEntryVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppEntryVC.m; sourceTree = "<group>"; };
+		1EB9912B261862B800B44ECA /* LRWelcomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRWelcomeVC.h; sourceTree = "<group>"; };
+		1EB9912C261862B800B44ECA /* LRAuthDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRAuthDetailVC.m; sourceTree = "<group>"; };
+		1EB9912D261862B800B44ECA /* HOTPKeyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HOTPKeyVC.m; sourceTree = "<group>"; };
+		1EB9912E261862B800B44ECA /* CommonOps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonOps.m; sourceTree = "<group>"; };
+		1EB9912F261862B800B44ECA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1EC4832F257B3C270043B7B9 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
+		1EFF0355254C262400C22B30 /* LoginRadiusAuthenticatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginRadiusAuthenticatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EFF0370254C262700C22B30 /* LoginRadiusAuthenticatorDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginRadiusAuthenticatorDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1EFF037B254C262700C22B30 /* LoginRadiusAuthenticatorDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoginRadiusAuthenticatorDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		83FA0B53615728A389D2AA24 /* Pods-LoginRadiusAuthenticatorDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginRadiusAuthenticatorDemo.release.xcconfig"; path = "Target Support Files/Pods-LoginRadiusAuthenticatorDemo/Pods-LoginRadiusAuthenticatorDemo.release.xcconfig"; sourceTree = "<group>"; };
+		8641CB9AB0FA93923C61384B /* Pods-LoginRadiusAuthenticatorDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginRadiusAuthenticatorDemo.debug.xcconfig"; path = "Target Support Files/Pods-LoginRadiusAuthenticatorDemo/Pods-LoginRadiusAuthenticatorDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		C95D5DAB9B9F4EBB7F9AEDB6 /* Pods_LoginRadiusAuthenticatorDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginRadiusAuthenticatorDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1EFF0352254C262400C22B30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EC48330257B3C270043B7B9 /* MessageUI.framework in Frameworks */,
+				1E8C6ACC2553A6860071987C /* AddressBookUI.framework in Frameworks */,
+				1E8C6CF42553BF600071987C /* Foundation.framework in Frameworks */,
+				1E8C6ACA2553A6800071987C /* AddressBook.framework in Frameworks */,
+				1E8C6AC62553A6650071987C /* CoreMedia.framework in Frameworks */,
+				1E8C6AC42553A65E0071987C /* CoreVideo.framework in Frameworks */,
+				1E8C6AC22553A6540071987C /* AudioToolbox.framework in Frameworks */,
+				1E8C6AC02553A6490071987C /* AVFoundation.framework in Frameworks */,
+				8510646F4AF8DF2F973F0EE3 /* Pods_LoginRadiusAuthenticatorDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EFF036D254C262600C22B30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EFF0378254C262700C22B30 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E87A881261AD17A005D180D /* LoginRadiusAuthenticator */ = {
+			isa = PBXGroup;
+			children = (
+				1E87A882261AD17A005D180D /* Source */,
+				1E87A88B261AD17A005D180D /* Helpers */,
+			);
+			path = LoginRadiusAuthenticator;
+			sourceTree = "<group>";
+		};
+		1E87A882261AD17A005D180D /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				1E87A883261AD17A005D180D /* HOTPGenerator.m */,
+				1E87A884261AD17A005D180D /* LRURL.h */,
+				1E87A885261AD17A005D180D /* OTPGenerator.m */,
+				1E87A886261AD17A005D180D /* TOTPGenerator.m */,
+				1E87A887261AD17A005D180D /* HOTPGenerator.h */,
+				1E87A888261AD17A005D180D /* OTPGenerator.h */,
+				1E87A889261AD17A005D180D /* LRURL.m */,
+				1E87A88A261AD17A005D180D /* TOTPGenerator.h */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		1E87A88B261AD17A005D180D /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1E87A88C261AD17A005D180D /* LRURLSession.h */,
+				1E87A88D261AD17A005D180D /* LRDefines.h */,
+				1E87A88E261AD17A005D180D /* LRStringEncoding.h */,
+				1E87A88F261AD17A005D180D /* LRStringOperations.h */,
+				1E87A890261AD17A005D180D /* LRNSString+URLArguments.m */,
+				1E87A891261AD17A005D180D /* LRNSString+URLArguments.h */,
+				1E87A892261AD17A005D180D /* LRStringOperations.m */,
+				1E87A893261AD17A005D180D /* LRStringEncoding.m */,
+				1E87A894261AD17A005D180D /* LRURLSession.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1EB990E5261862B700B44ECA /* LoginRadiusAuthenticatorDemo */ = {
+			isa = PBXGroup;
+			children = (
+				1EB990E6261862B800B44ECA /* Assets.xcassets */,
+				1EB990E7261862B800B44ECA /* Library */,
+				1EB9910E261862B800B44ECA /* CommonOps.h */,
+				1EB9910F261862B800B44ECA /* LaunchScreen.storyboard */,
+				1EB99111261862B800B44ECA /* Main.storyboard */,
+				1EB99113261862B800B44ECA /* main.m */,
+				1EB99115261862B800B44ECA /* Controllers */,
+				1EB9912E261862B800B44ECA /* CommonOps.m */,
+				1EB9912F261862B800B44ECA /* Info.plist */,
+			);
+			path = LoginRadiusAuthenticatorDemo;
+			sourceTree = "<group>";
+		};
+		1EB990E7261862B800B44ECA /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				1EB990FC261862B800B44ECA /* SWRevealViewController */,
+				1EB990FF261862B800B44ECA /* ReachabilityCheck.h */,
+				1EB99105261862B800B44ECA /* ReachabilityCheck.m */,
+			);
+			path = Library;
+			sourceTree = "<group>";
+		};
+		1EB990FC261862B800B44ECA /* SWRevealViewController */ = {
+			isa = PBXGroup;
+			children = (
+				1EB990FD261862B800B44ECA /* SWRevealViewController.h */,
+				1EB990FE261862B800B44ECA /* SWRevealViewController.m */,
+			);
+			path = SWRevealViewController;
+			sourceTree = "<group>";
+		};
+		1EB99115261862B800B44ECA /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1EB99116261862B800B44ECA /* OTPTableViewCell.m */,
+				1EB99117261862B800B44ECA /* LRAuthListVC.m */,
+				1EB99118261862B800B44ECA /* LRURLEntryController.h */,
+				1EB99119261862B800B44ECA /* AppDelegate.h */,
+				1EB9911A261862B800B44ECA /* SidenavVC.m */,
+				1EB9911B261862B800B44ECA /* WebViewContainerVC.h */,
+				1EB9911C261862B800B44ECA /* TutorialVCViewController.m */,
+				1EB9911D261862B800B44ECA /* LRWelcomeVC.m */,
+				1EB9911E261862B800B44ECA /* AppEntryVC.h */,
+				1EB99120261862B800B44ECA /* HOTPKeyVC.h */,
+				1EB99121261862B800B44ECA /* LRAuthDetailVC.h */,
+				1EB99122261862B800B44ECA /* LRURLEntryController.m */,
+				1EB99123261862B800B44ECA /* OTPTableViewCell.h */,
+				1EB99124261862B800B44ECA /* LRAuthListVC.h */,
+				1EB99126261862B800B44ECA /* TutorialVCViewController.h */,
+				1EB99127261862B800B44ECA /* WebViewContainerVC.m */,
+				1EB99128261862B800B44ECA /* SidenavVC.h */,
+				1EB99129261862B800B44ECA /* AppDelegate.m */,
+				1EB9912A261862B800B44ECA /* AppEntryVC.m */,
+				1EB9912B261862B800B44ECA /* LRWelcomeVC.h */,
+				1EB9912C261862B800B44ECA /* LRAuthDetailVC.m */,
+				1EB9912D261862B800B44ECA /* HOTPKeyVC.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1EFF034C254C262400C22B30 = {
+			isa = PBXGroup;
+			children = (
+				1E87A881261AD17A005D180D /* LoginRadiusAuthenticator */,
+				1EB990E5261862B700B44ECA /* LoginRadiusAuthenticatorDemo */,
+				1EFF0356254C262400C22B30 /* Products */,
+				20F1B6B26FED5C0697A1B3BD /* Pods */,
+				A7BD5B53591A7C76775FE6F7 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1EFF0356254C262400C22B30 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1EFF0355254C262400C22B30 /* LoginRadiusAuthenticatorDemo.app */,
+				1EFF0370254C262700C22B30 /* LoginRadiusAuthenticatorDemoTests.xctest */,
+				1EFF037B254C262700C22B30 /* LoginRadiusAuthenticatorDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		20F1B6B26FED5C0697A1B3BD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				8641CB9AB0FA93923C61384B /* Pods-LoginRadiusAuthenticatorDemo.debug.xcconfig */,
+				83FA0B53615728A389D2AA24 /* Pods-LoginRadiusAuthenticatorDemo.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A7BD5B53591A7C76775FE6F7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E10C87C2582738800609AB5 /* Security.framework */,
+				1EC4832F257B3C270043B7B9 /* MessageUI.framework */,
+				1E8C6CF32553BF600071987C /* Foundation.framework */,
+				1E8C6ACB2553A6860071987C /* AddressBookUI.framework */,
+				1E8C6AC92553A6800071987C /* AddressBook.framework */,
+				1E8C6AC72553A6710071987C /* libiconv.tbd */,
+				1E8C6AC52553A6650071987C /* CoreMedia.framework */,
+				1E8C6AC32553A65E0071987C /* CoreVideo.framework */,
+				1E8C6AC12553A6540071987C /* AudioToolbox.framework */,
+				1E8C6ABF2553A6490071987C /* AVFoundation.framework */,
+				C95D5DAB9B9F4EBB7F9AEDB6 /* Pods_LoginRadiusAuthenticatorDemo.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1EFF0354254C262400C22B30 /* LoginRadiusAuthenticatorDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EFF0384254C262700C22B30 /* Build configuration list for PBXNativeTarget "LoginRadiusAuthenticatorDemo" */;
+			buildPhases = (
+				12807AB3EBFDD0A02C6D99C6 /* [CP] Check Pods Manifest.lock */,
+				1EFF0351254C262400C22B30 /* Sources */,
+				1EFF0352254C262400C22B30 /* Frameworks */,
+				1EFF0353254C262400C22B30 /* Resources */,
+				89CC6DAF3A3ADD1C45ED952A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LoginRadiusAuthenticatorDemo;
+			productName = LoginRadiusAuthenticator;
+			productReference = 1EFF0355254C262400C22B30 /* LoginRadiusAuthenticatorDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1EFF036F254C262600C22B30 /* LoginRadiusAuthenticatorDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EFF0387254C262700C22B30 /* Build configuration list for PBXNativeTarget "LoginRadiusAuthenticatorDemoTests" */;
+			buildPhases = (
+				1EFF036C254C262600C22B30 /* Sources */,
+				1EFF036D254C262600C22B30 /* Frameworks */,
+				1EFF036E254C262600C22B30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EFF0372254C262700C22B30 /* PBXTargetDependency */,
+			);
+			name = LoginRadiusAuthenticatorDemoTests;
+			productName = LoginRadiusAuthenticatorTests;
+			productReference = 1EFF0370254C262700C22B30 /* LoginRadiusAuthenticatorDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1EFF037A254C262700C22B30 /* LoginRadiusAuthenticatorDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1EFF038A254C262700C22B30 /* Build configuration list for PBXNativeTarget "LoginRadiusAuthenticatorDemoUITests" */;
+			buildPhases = (
+				1EFF0377254C262700C22B30 /* Sources */,
+				1EFF0378254C262700C22B30 /* Frameworks */,
+				1EFF0379254C262700C22B30 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1EFF037D254C262700C22B30 /* PBXTargetDependency */,
+			);
+			name = LoginRadiusAuthenticatorDemoUITests;
+			productName = LoginRadiusAuthenticatorUITests;
+			productReference = 1EFF037B254C262700C22B30 /* LoginRadiusAuthenticatorDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1EFF034D254C262400C22B30 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1170;
+				ORGANIZATIONNAME = "Tavni Jain";
+				TargetAttributes = {
+					1EFF0354254C262400C22B30 = {
+						CreatedOnToolsVersion = 11.7;
+						LastSwiftMigration = 1170;
+					};
+					1EFF036F254C262600C22B30 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 1EFF0354254C262400C22B30;
+					};
+					1EFF037A254C262700C22B30 = {
+						CreatedOnToolsVersion = 11.7;
+						TestTargetID = 1EFF0354254C262400C22B30;
+					};
+				};
+			};
+			buildConfigurationList = 1EFF0350254C262400C22B30 /* Build configuration list for PBXProject "LoginRadiusAuthenticatorDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1EFF034C254C262400C22B30;
+			productRefGroup = 1EFF0356254C262400C22B30 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1EFF0354254C262400C22B30 /* LoginRadiusAuthenticatorDemo */,
+				1EFF036F254C262600C22B30 /* LoginRadiusAuthenticatorDemoTests */,
+				1EFF037A254C262700C22B30 /* LoginRadiusAuthenticatorDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1EFF0353254C262400C22B30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EB99143261862B800B44ECA /* LaunchScreen.storyboard in Resources */,
+				1EB99144261862B800B44ECA /* Main.storyboard in Resources */,
+				1EB99130261862B800B44ECA /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EFF036E254C262600C22B30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EFF0379254C262700C22B30 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		12807AB3EBFDD0A02C6D99C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-LoginRadiusAuthenticatorDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		89CC6DAF3A3ADD1C45ED952A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginRadiusAuthenticatorDemo/Pods-LoginRadiusAuthenticatorDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-LoginRadiusAuthenticatorDemo/Pods-LoginRadiusAuthenticatorDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-LoginRadiusAuthenticatorDemo/Pods-LoginRadiusAuthenticatorDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1EFF0351254C262400C22B30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EB9914F261862B800B44ECA /* AppDelegate.m in Sources */,
+				1EB99145261862B800B44ECA /* main.m in Sources */,
+				1E87A89C261AD17A005D180D /* LRURLSession.m in Sources */,
+				1EB99149261862B800B44ECA /* TutorialVCViewController.m in Sources */,
+				1EB99150261862B800B44ECA /* AppEntryVC.m in Sources */,
+				1EB9914E261862B800B44ECA /* WebViewContainerVC.m in Sources */,
+				1E87A89B261AD17A005D180D /* LRStringEncoding.m in Sources */,
+				1EB9914C261862B800B44ECA /* LRURLEntryController.m in Sources */,
+				1EB99153261862B800B44ECA /* CommonOps.m in Sources */,
+				1EB99146261862B800B44ECA /* OTPTableViewCell.m in Sources */,
+				1EB99151261862B800B44ECA /* LRAuthDetailVC.m in Sources */,
+				1EB99139261862B800B44ECA /* SWRevealViewController.m in Sources */,
+				1E87A899261AD17A005D180D /* LRNSString+URLArguments.m in Sources */,
+				1E87A897261AD17A005D180D /* TOTPGenerator.m in Sources */,
+				1E87A896261AD17A005D180D /* OTPGenerator.m in Sources */,
+				1EB99152261862B800B44ECA /* HOTPKeyVC.m in Sources */,
+				1EB99148261862B800B44ECA /* SidenavVC.m in Sources */,
+				1E87A895261AD17A005D180D /* HOTPGenerator.m in Sources */,
+				1E87A89A261AD17A005D180D /* LRStringOperations.m in Sources */,
+				1EB9913D261862B800B44ECA /* ReachabilityCheck.m in Sources */,
+				1EB99147261862B800B44ECA /* LRAuthListVC.m in Sources */,
+				1E87A898261AD17A005D180D /* LRURL.m in Sources */,
+				1EB9914A261862B800B44ECA /* LRWelcomeVC.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EFF036C254C262600C22B30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1EFF0377254C262700C22B30 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1EFF0372254C262700C22B30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EFF0354254C262400C22B30 /* LoginRadiusAuthenticatorDemo */;
+			targetProxy = 1EFF0371254C262700C22B30 /* PBXContainerItemProxy */;
+		};
+		1EFF037D254C262700C22B30 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1EFF0354254C262400C22B30 /* LoginRadiusAuthenticatorDemo */;
+			targetProxy = 1EFF037C254C262700C22B30 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1EB9910F261862B800B44ECA /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1EB99110261862B800B44ECA /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1EB99111261862B800B44ECA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1EB99112261862B800B44ECA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1EFF0382254C262700C22B30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1EFF0383254C262700C22B30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1EFF0385254C262700C22B30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8641CB9AB0FA93923C61384B /* Pods-LoginRadiusAuthenticatorDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: LoginRadius Inc. (ALKGCW9CD6)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = ALKGCW9CD6;
+				GCC_PREFIX_HEADER = "/Users/tavnijain/Desktop/LoginRadiusAuthenticator/LoginRadiusAuthenticatorDemo/LoginRadiusAuthenticatorDemo-PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers\"",
+				);
+				INFOPLIST_FILE = LoginRadiusAuthenticatorDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lr.LoginRadiusAuthenticator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = LoginRadiusAuthenticator;
+				SWIFT_OBJC_BRIDGING_HEADER = "LoginRadiusAuthenticator/Helpers/LoginRadiusAuthenticator-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_HEADER_SEARCH_PATHS = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		1EFF0386254C262700C22B30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83FA0B53615728A389D2AA24 /* Pods-LoginRadiusAuthenticatorDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: LoginRadius Inc. (ALKGCW9CD6)";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 1.0.1;
+				DEFINES_MODULE = NO;
+				DEVELOPMENT_TEAM = ALKGCW9CD6;
+				GCC_PREFIX_HEADER = "/Users/tavnijain/Desktop/LoginRadiusAuthenticator/LoginRadiusAuthenticatorDemo/LoginRadiusAuthenticatorDemo-PrefixHeader.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers\"",
+				);
+				INFOPLIST_FILE = LoginRadiusAuthenticatorDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				ONLY_ACTIVE_ARCH = NO;
+				PRODUCT_BUNDLE_IDENTIFIER = com.lr.LoginRadiusAuthenticator;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = LoginRadiusAuthenticator;
+				SWIFT_OBJC_BRIDGING_HEADER = "LoginRadiusAuthenticator/Helpers/LoginRadiusAuthenticator-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				SYSTEM_HEADER_SEARCH_PATHS = "";
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		1EFF0388254C262700C22B30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LoginRadiusAuthenticatorDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lr.LoginRadiusAuthenticatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoginRadiusAuthenticatorDemo.app/LoginRadiusAuthenticatorDemo";
+			};
+			name = Debug;
+		};
+		1EFF0389254C262700C22B30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LoginRadiusAuthenticatorDemoTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lr.LoginRadiusAuthenticatorTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/LoginRadiusAuthenticatorDemo.app/LoginRadiusAuthenticatorDemo";
+			};
+			name = Release;
+		};
+		1EFF038B254C262700C22B30 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LoginRadiusAuthenticatorDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lr.LoginRadiusAuthenticatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LoginRadiusAuthenticator;
+			};
+			name = Debug;
+		};
+		1EFF038C254C262700C22B30 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = LoginRadiusAuthenticatorDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.lr.LoginRadiusAuthenticatorUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = LoginRadiusAuthenticator;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1EFF0350254C262400C22B30 /* Build configuration list for PBXProject "LoginRadiusAuthenticatorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EFF0382254C262700C22B30 /* Debug */,
+				1EFF0383254C262700C22B30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EFF0384254C262700C22B30 /* Build configuration list for PBXNativeTarget "LoginRadiusAuthenticatorDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EFF0385254C262700C22B30 /* Debug */,
+				1EFF0386254C262700C22B30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EFF0387254C262700C22B30 /* Build configuration list for PBXNativeTarget "LoginRadiusAuthenticatorDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EFF0388254C262700C22B30 /* Debug */,
+				1EFF0389254C262700C22B30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1EFF038A254C262700C22B30 /* Build configuration list for PBXNativeTarget "LoginRadiusAuthenticatorDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1EFF038B254C262700C22B30 /* Debug */,
+				1EFF038C254C262700C22B30 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1EFF034D254C262400C22B30 /* Project object */;
+}
