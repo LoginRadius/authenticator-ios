@@ -15,7 +15,7 @@ the [App Store](https://apps.apple.com/us/app/loginradius-authenticator/id154604
 > Features:
 > * Generate verification codes without a data connection
 > * Generate Time-Based and Counter-Based codes
-> * Google Authenticator works with many providers & accounts
+> * LoginRadiusAuthenticator works with many providers & accounts
 > * Password protected
 > * Automatic setup via QR code
 
