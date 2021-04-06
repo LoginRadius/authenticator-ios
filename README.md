@@ -72,7 +72,6 @@ For more detail [please refer](https://developer.apple.com/documentation/swift/i
 
 ```
 We'd love to collaborate on this. See CONTRIBUTING.md for details.
-
 ```
 
 ## Copyright
