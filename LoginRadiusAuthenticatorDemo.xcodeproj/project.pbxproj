@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E1D4DA2261C7AA1006D82F1 /* CommonOps.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E1D4DA1261C7AA1006D82F1 /* CommonOps.m */; };
 		1E87A895261AD17A005D180D /* HOTPGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E87A883261AD17A005D180D /* HOTPGenerator.m */; };
 		1E87A896261AD17A005D180D /* OTPGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E87A885261AD17A005D180D /* OTPGenerator.m */; };
 		1E87A897261AD17A005D180D /* TOTPGenerator.m in Sources */ = {isa = PBXBuildFile; fileRef = 1E87A886261AD17A005D180D /* TOTPGenerator.m */; };
@@ -39,7 +40,6 @@
 		1EB99150261862B800B44ECA /* AppEntryVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB9912A261862B800B44ECA /* AppEntryVC.m */; };
 		1EB99151261862B800B44ECA /* LRAuthDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB9912C261862B800B44ECA /* LRAuthDetailVC.m */; };
 		1EB99152261862B800B44ECA /* HOTPKeyVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB9912D261862B800B44ECA /* HOTPKeyVC.m */; };
-		1EB99153261862B800B44ECA /* CommonOps.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB9912E261862B800B44ECA /* CommonOps.m */; };
 		1EC48330257B3C270043B7B9 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1EC4832F257B3C270043B7B9 /* MessageUI.framework */; };
 		8510646F4AF8DF2F973F0EE3 /* Pods_LoginRadiusAuthenticatorDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C95D5DAB9B9F4EBB7F9AEDB6 /* Pods_LoginRadiusAuthenticatorDemo.framework */; };
 /* End PBXBuildFile section */
@@ -63,6 +63,9 @@
 
 /* Begin PBXFileReference section */
 		1E10C87C2582738800609AB5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
+		1E1D4D9F261C7A68006D82F1 /* LoginRadiusAuthenticatorDemo-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LoginRadiusAuthenticatorDemo-PrefixHeader.pch"; sourceTree = "<group>"; };
+		1E1D4DA0261C7AA1006D82F1 /* CommonOps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonOps.h; sourceTree = "<group>"; };
+		1E1D4DA1261C7AA1006D82F1 /* CommonOps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonOps.m; sourceTree = "<group>"; };
 		1E87A883261AD17A005D180D /* HOTPGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HOTPGenerator.m; sourceTree = "<group>"; };
 		1E87A884261AD17A005D180D /* LRURL.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRURL.h; sourceTree = "<group>"; };
 		1E87A885261AD17A005D180D /* OTPGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OTPGenerator.m; sourceTree = "<group>"; };
@@ -93,7 +96,6 @@
 		1EB990FE261862B800B44ECA /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
 		1EB990FF261862B800B44ECA /* ReachabilityCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ReachabilityCheck.h; sourceTree = "<group>"; };
 		1EB99105261862B800B44ECA /* ReachabilityCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ReachabilityCheck.m; sourceTree = "<group>"; };
-		1EB9910E261862B800B44ECA /* CommonOps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonOps.h; sourceTree = "<group>"; };
 		1EB99110261862B800B44ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1EB99112261862B800B44ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1EB99113261862B800B44ECA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -119,7 +121,6 @@
 		1EB9912B261862B800B44ECA /* LRWelcomeVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LRWelcomeVC.h; sourceTree = "<group>"; };
 		1EB9912C261862B800B44ECA /* LRAuthDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LRAuthDetailVC.m; sourceTree = "<group>"; };
 		1EB9912D261862B800B44ECA /* HOTPKeyVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HOTPKeyVC.m; sourceTree = "<group>"; };
-		1EB9912E261862B800B44ECA /* CommonOps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonOps.m; sourceTree = "<group>"; };
 		1EB9912F261862B800B44ECA /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EC4832F257B3C270043B7B9 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		1EFF0355254C262400C22B30 /* LoginRadiusAuthenticatorDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginRadiusAuthenticatorDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -207,14 +208,15 @@
 		1EB990E5261862B700B44ECA /* LoginRadiusAuthenticatorDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1E1D4DA0261C7AA1006D82F1 /* CommonOps.h */,
+				1E1D4DA1261C7AA1006D82F1 /* CommonOps.m */,
+				1E1D4D9F261C7A68006D82F1 /* LoginRadiusAuthenticatorDemo-PrefixHeader.pch */,
 				1EB990E6261862B800B44ECA /* Assets.xcassets */,
 				1EB990E7261862B800B44ECA /* Library */,
-				1EB9910E261862B800B44ECA /* CommonOps.h */,
 				1EB9910F261862B800B44ECA /* LaunchScreen.storyboard */,
 				1EB99111261862B800B44ECA /* Main.storyboard */,
 				1EB99113261862B800B44ECA /* main.m */,
 				1EB99115261862B800B44ECA /* Controllers */,
-				1EB9912E261862B800B44ECA /* CommonOps.m */,
 				1EB9912F261862B800B44ECA /* Info.plist */,
 			);
 			path = LoginRadiusAuthenticatorDemo;
@@ -498,8 +500,8 @@
 				1EB99150261862B800B44ECA /* AppEntryVC.m in Sources */,
 				1EB9914E261862B800B44ECA /* WebViewContainerVC.m in Sources */,
 				1E87A89B261AD17A005D180D /* LRStringEncoding.m in Sources */,
+				1E1D4DA2261C7AA1006D82F1 /* CommonOps.m in Sources */,
 				1EB9914C261862B800B44ECA /* LRURLEntryController.m in Sources */,
-				1EB99153261862B800B44ECA /* CommonOps.m in Sources */,
 				1EB99146261862B800B44ECA /* OTPTableViewCell.m in Sources */,
 				1EB99151261862B800B44ECA /* LRAuthDetailVC.m in Sources */,
 				1EB99139261862B800B44ECA /* SWRevealViewController.m in Sources */,
@@ -688,7 +690,7 @@
 				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = ALKGCW9CD6;
-				GCC_PREFIX_HEADER = "/Users/tavnijain/Desktop/LoginRadiusAuthenticator/LoginRadiusAuthenticatorDemo/LoginRadiusAuthenticatorDemo-PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "/Users/tavnijain/Downloads/authenticator-ios-main/LoginRadiusAuthenticatorDemo/LoginRadiusAuthenticatorDemo-PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers\"",
@@ -723,7 +725,7 @@
 				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = ALKGCW9CD6;
-				GCC_PREFIX_HEADER = "/Users/tavnijain/Desktop/LoginRadiusAuthenticator/LoginRadiusAuthenticatorDemo/LoginRadiusAuthenticatorDemo-PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "/Users/tavnijain/Downloads/authenticator-ios-main/LoginRadiusAuthenticatorDemo/LoginRadiusAuthenticatorDemo-PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers\"",
