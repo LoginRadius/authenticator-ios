@@ -44,12 +44,12 @@ download the GitHub repository. To build the demo project from the source code, 
 
 ## Developer Guide
 
-You can also leverage LoginRadiusAuthenticator library classes in your own project and faciliate users with generating 2- factor codes.
+You can also leverage LoginRadiusAuthenticator library classes in your own project and faciliate users with generating 2 factor codes.
 
 Just download the repository from here. And integrate by dragging and dropping LoginRadiusAuthenticator library folder in your own project. Then in any required class, import and use classes as shown in the demo.
 
 The library classes are written in Objective-C which can be directly integrated in an Objective-C project. For integrating in Swift project, create a BridgingHeader file and import library classes there.
-For more detail [please refer](https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_objective-c_into_swift)
+For more detail [please refer](https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_objective-c_into_swift).
 
 ### Building from Source
 
