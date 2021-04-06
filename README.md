@@ -62,7 +62,7 @@ For more detail [please refer](https://developer.apple.com/documentation/swift/i
 
 2. Run the pod command.
 
-  ```
+```
   pod install
   ```
 
@@ -71,16 +71,16 @@ For more detail [please refer](https://developer.apple.com/documentation/swift/i
 ## Contributing
 
 ```
-We'd love to collaborate on this. See CONTRIBUTING.md for details.
-```
+  We'd love to collaborate on this. See CONTRIBUTING.md for details.
+  ```
 
 ## Copyright
 
 ```
-Copyright (c) 2021 LoginRadius
-```
+  Copyright (c) 2021 LoginRadius
+  ```
 ## License
 
 ```
-Released under the MIT license.
-```
+  Released under the MIT license.
+  ```
