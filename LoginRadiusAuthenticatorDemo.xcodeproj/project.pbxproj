@@ -63,7 +63,6 @@
 
 /* Begin PBXFileReference section */
 		1E10C87C2582738800609AB5 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
-		1E1D4D9F261C7A68006D82F1 /* LoginRadiusAuthenticatorDemo-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LoginRadiusAuthenticatorDemo-PrefixHeader.pch"; sourceTree = "<group>"; };
 		1E1D4DA0261C7AA1006D82F1 /* CommonOps.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CommonOps.h; sourceTree = "<group>"; };
 		1E1D4DA1261C7AA1006D82F1 /* CommonOps.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CommonOps.m; sourceTree = "<group>"; };
 		1E87A883261AD17A005D180D /* HOTPGenerator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HOTPGenerator.m; sourceTree = "<group>"; };
@@ -91,6 +90,7 @@
 		1E8C6AC92553A6800071987C /* AddressBook.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBook.framework; path = System/Library/Frameworks/AddressBook.framework; sourceTree = SDKROOT; };
 		1E8C6ACB2553A6860071987C /* AddressBookUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AddressBookUI.framework; path = System/Library/Frameworks/AddressBookUI.framework; sourceTree = SDKROOT; };
 		1E8C6CF32553BF600071987C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1E8ECBE3261CD79300CB748D /* LoginRadiusAuthenticatorDemo-PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "LoginRadiusAuthenticatorDemo-PrefixHeader.pch"; sourceTree = "<group>"; };
 		1EB990E6261862B800B44ECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1EB990FD261862B800B44ECA /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		1EB990FE261862B800B44ECA /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
@@ -208,9 +208,9 @@
 		1EB990E5261862B700B44ECA /* LoginRadiusAuthenticatorDemo */ = {
 			isa = PBXGroup;
 			children = (
+				1E8ECBE3261CD79300CB748D /* LoginRadiusAuthenticatorDemo-PrefixHeader.pch */,
 				1E1D4DA0261C7AA1006D82F1 /* CommonOps.h */,
 				1E1D4DA1261C7AA1006D82F1 /* CommonOps.m */,
-				1E1D4D9F261C7A68006D82F1 /* LoginRadiusAuthenticatorDemo-PrefixHeader.pch */,
 				1EB990E6261862B800B44ECA /* Assets.xcassets */,
 				1EB990E7261862B800B44ECA /* Library */,
 				1EB9910F261862B800B44ECA /* LaunchScreen.storyboard */,
@@ -690,7 +690,7 @@
 				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = ALKGCW9CD6;
-				GCC_PREFIX_HEADER = "/Users/tavnijain/Downloads/authenticator-ios-main/LoginRadiusAuthenticatorDemo/LoginRadiusAuthenticatorDemo-PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LoginRadiusAuthenticatorDemo/LoginRadiusAuthenticatorDemo-PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers\"",
@@ -725,7 +725,7 @@
 				CURRENT_PROJECT_VERSION = 1.0.1;
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = ALKGCW9CD6;
-				GCC_PREFIX_HEADER = "/Users/tavnijain/Downloads/authenticator-ios-main/LoginRadiusAuthenticatorDemo/LoginRadiusAuthenticatorDemo-PrefixHeader.pch";
+				GCC_PREFIX_HEADER = "$(SRCROOT)/LoginRadiusAuthenticatorDemo/LoginRadiusAuthenticatorDemo-PrefixHeader.pch";
 				HEADER_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers\"",
