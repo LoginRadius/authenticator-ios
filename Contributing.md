@@ -1,12 +1,11 @@
 # Contributing
 
-[Loginradius Engineering Portal](https://www.loginradius.com/blog/async) is [MIT](LICENSE) licensed and accepts contributions via GitHub pull requests. This document outlines some of the conventions on development workflow, commit message formatting, contact points and other resources to make it easier to get your contribution accepted.
+[LoginradiusAuthenticator] is [MIT](LICENSE) licensed and accepts contributions via GitHub pull requests. This document outlines some of the conventions on development workflow, commit message formatting, contact points and other resources to make it easier to get your contribution accepted.
 
 ## Getting Started
 
 - Fork the repository on GitHub
-- Read the [Blog writing guideline](GUIDELINES.md) for writing and publishing your blog
-- If you find any bug/typo/fix in our existing blog posts, please create a pull request as mentioned in Contribution Flow
+- If you find any bug/enhancement/fix in our existing repo, please create a pull request as mentioned in Contribution Flow
 
 ## Contribution Flow
 
@@ -31,19 +30,6 @@ Please follow the below format while writing commit messages
 ```
 
 Thanks for your contributions!
-
-## What we are looking for
-
-- A well-articulated technology-related blog post
-- The post should be of 600-900 words.
-- The topic must relate to technology/programming/coding.
-- Post must not be published elsewhere.
-- The author gets only these link(s) in bio, GitHub, StackOverflow, LinkedIn.
-- The post should adhere to our [Blog writing guideline](GUIDELINES.md)
-
-Please note we have a code of conduct, please follow it in all your interactions with the project.
-
-## Code of Conduct
 
 ### Our Pledge
 
