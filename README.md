@@ -19,18 +19,16 @@ the [App Store](https://apps.apple.com/us/app/loginradius-authenticator/id154604
 > * Password protected
 > * Automatic setup via QR code
 
-
 ## Description
 
 The LoginRadiusAuthenticator project includes implementations of one-time passcode
 generators for iOS demonstrating in LoginRadiusAuthenticatorDemo, as well as a LoginRadiusAuthenticator folder as Library claases in it. One-time passcodes are generated using open standards
-developed by the [Initiative for Open Authentication (OATH)][OATH] (which is
-unrelated to [OAuth][]).
-
+developed by the [Initiative for Open Authentication (OATH)](https://openauthentication.org/) (which is
+unrelated to [OAuth](https://oauth.net/)).
 
 * The iOS implementation supports the HMAC-Based One-time Password (HOTP)
-  algorithm specified in [RFC 4226][] and the Time-based One-time Password
-  (TOTP) algorithm specified in [RFC 6238][].
+  algorithm specified in [RFC 4226](https://tools.ietf.org/html/rfc4226) and the Time-based One-time Password
+  (TOTP) algorithm specified in [RFC 6238](https://tools.ietf.org/html/rfc6238).
 
 ## Installation
 
