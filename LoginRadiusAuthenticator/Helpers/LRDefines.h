@@ -1,21 +1,10 @@
 //
 // LRDefines.h
+//  LoginRadiusAuthenticator
 //
-//  Copyright 2008 Google Inc.
+//  Created by LoginRadius Development Team on 2020-02-11.
+//  Copyright © 2020 LoginRadius Inc. All rights reserved.
 //
-//  Licensed under the Apache License, Version 2.0 (the "License"); you may not
-//  use this file except in compliance with the License.  You may obtain a copy
-//  of the License at
-//
-//  http://www.apache.org/licenses/LICENSE-2.0
-//
-//  Unless required by applicable law or agreed to in writing, software
-//  distributed under the License is distributed on an "AS IS" BASIS, WITHOUT
-//  WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.  See the
-//  License for the specific language governing permissions and limitations under
-//  the License.
-//
-
 // ============================================================================
 
 #include <AvailabilityMacros.h>
@@ -96,8 +85,7 @@
 // developer level errors.  This implementation simply macros to NSLog/NSAssert.
 // It is not intended to be a general logging/reporting system.
 //
-// Please see http://code.google.com/p/google-toolbox-for-mac/wiki/DevLogNAssert
-// for a little more background on the usage of these macros.
+
 //
 //    _LRDevLog           log some error/problem in debug builds
 //    _LRDevAssert        assert if condition isn't met w/in a method/function

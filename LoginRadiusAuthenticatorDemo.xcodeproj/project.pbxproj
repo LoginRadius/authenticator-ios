@@ -691,10 +691,7 @@
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = ALKGCW9CD6;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LoginRadiusAuthenticatorDemo/LoginRadiusAuthenticatorDemo-PrefixHeader.pch";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers\"",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = LoginRadiusAuthenticatorDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -726,10 +723,7 @@
 				DEFINES_MODULE = NO;
 				DEVELOPMENT_TEAM = ALKGCW9CD6;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/LoginRadiusAuthenticatorDemo/LoginRadiusAuthenticatorDemo-PrefixHeader.pch";
-				HEADER_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"${PODS_CONFIGURATION_BUILD_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework/Headers\"",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = LoginRadiusAuthenticatorDemo/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
