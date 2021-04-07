@@ -2,8 +2,8 @@
 //  main.m
 //  LoginRadiusAuthenticator
 //
-//  Created by Tanvi Jain on 2020-10-30.
-//  Copyright © 2020 Tavni Jain. All rights reserved.
+//  Created by LoginRadius Development Team on 2020-02-11.
+//  Copyright © 2020 LoginRadius Inc. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
