@@ -57,7 +57,7 @@ For more detail [please refer](https://developer.apple.com/documentation/swift/i
 
 ```
    git clone https://github.com/LoginRadius/authenticator-ios.git
-   cd authenticator-ios
+   cd authenticator-ios/LoginRadiusAuthenticator
    ```
 
 2. Run the pod command.
