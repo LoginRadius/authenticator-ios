@@ -22,7 +22,7 @@ the [App Store](https://apps.apple.com/us/app/loginradius-authenticator/id154604
 ## Description
 
 The LoginRadiusAuthenticator project includes implementations of one-time passcode
-generators for iOS demonstrating in LoginRadiusAuthenticatorDemo, as well as a LoginRadiusAuthenticator folder as Library claases in it. One-time passcodes are generated using open standards
+generators for iOS. One-time passcodes are generated using open standards
 developed by the [Initiative for Open Authentication (OATH)](https://openauthentication.org/) (which is
 unrelated to [OAuth](https://oauth.net/)).
 
@@ -39,16 +39,16 @@ app from App store.
 ### Open Source Version
 
 The easiest way to install the open source flavour of Authenticator is to
-download the GitHub repository. To build the demo project from the source code, see the section about
+download the GitHub repository. To build the project from the source code, see the section about
 [building from source](#building-from-source).
 
 ## Developer Guide
 
 You can also leverage LoginRadiusAuthenticator library classes in your own project and faciliate users with generating 2 factor codes.
 
-Just download the repository from here. And integrate by dragging and dropping LoginRadiusAuthenticator library folder in your own project. Then in any required class, import and use classes as shown in the demo.
+Just download the repository from here. And integrate by dragging and dropping LoginRadiusAuthenticator's Helper folder in your own project. Then in any required class, import and use classes as shown in LoginRadiusAuthenticator project.
 
-The library classes are written in Objective-C which can be directly integrated in an Objective-C project. For integrating in Swift project, create a BridgingHeader file and import library classes there.
+The helper classes are written in Objective-C which can be directly integrated in an Objective-C project. For integrating in Swift project, create a BridgingHeader file and import library classes there.
 For more detail [please refer](https://developer.apple.com/documentation/swift/imported_c_and_objective-c_apis/importing_objective-c_into_swift).
 
 ### Building from Source
@@ -66,7 +66,7 @@ For more detail [please refer](https://developer.apple.com/documentation/swift/i
   pod install
   ```
 
-3. Open the created .xcworkspace file in Xcode. Build the demo on simulator or connected device.
+3. Open the created .xcworkspace file in Xcode. Build the project on simulator or connected device.
 
 ## Contributing
 
